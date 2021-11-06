@@ -1,0 +1,11 @@
+version: '3'
+
+services:
+  php:
+    build:
+      context: .
+      dockerfile: ./docker/php/Dockerfile
+    image: php:simcart
+    container_name: simcart-php
+    volumes:
+      - .:/var/www/
